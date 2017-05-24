@@ -1,3 +1,4 @@
-# Boilerplate Meteor Project
+# Reimagined-Notes Meteor Project
 
-This includes a basic react and auth setup.
+This is a project I'm working on to help me along my path to becoming a fullstack developer in Meteor and React.
+Includes authorization, various npm packages, as well as client and server side testing.
