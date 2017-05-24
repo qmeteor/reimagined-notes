@@ -35,7 +35,11 @@ export default createContainer(() => {
     Meteor.subscribe('notes');
 //keys in here are props in the component
     return {
-        notes: Notes.find().fetch().map((note) => {
+        notes: Notes.find({}, {
+            sort: {
+                updatedAt: -1
+            }
+        }).fetch().map((note) => {
             return {
                 ...note,
                 selected: note._id === selectedNoteId
